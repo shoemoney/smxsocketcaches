@@ -1,0 +1,90 @@
+Arguments: 
+  /Users/shoemoney/.nvm/versions/node/v14.15.1/bin/node /Users/shoemoney/.nvm/versions/node/v14.15.1/bin/yarn add
+
+PATH: 
+  /Users/shoemoney/.nvm/versions/node/v14.15.1/bin:/usr/local/opt/mysql-client/bin:usr/local/opt/mysql-client/bin:/usr/local/bin:/Users/shoemoney/.composer/vendor/bin:/usr/bin:/bin:/usr/sbin:/usr/local/sbin:/sbin:/Users/shoemoney/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/shoemoney/.vim/plugged/fzf/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.15.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/shoemoney/web/bitchwork/package.json: Unexpected token { in JSON at position 167
+      at JSON.parse (<anonymous>)
+      at /Users/shoemoney/.nvm/versions/node/v14.15.1/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/Users/shoemoney/.nvm/versions/node/v14.15.1/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /Users/shoemoney/.nvm/versions/node/v14.15.1/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "smxcaches",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+  {  "husky": {
+       "hooks": {
+         "pre-commit": "lint-staged"
+       }
+     },
+     "lint-staged": {
+       "*.+(json|css|md)": [
+         "prettier --write",
+         "git add"
+       ]
+     },
+     "dependencies": {
+       "ansicolor": "^1.1.93",
+       "as-table": "^1.0.55",
+       "asciichart": "^1.5.25",
+       "aws-sdk": "^2.798.0",
+       "axios": "^0.21.0",
+       "bybit-api": "^1.2.5",
+       "ccxt": "^1.38.13",
+       "chalk": "^4.1.0",
+       "dotenv": "^8.2.0",
+       "ioredis": "^4.19.2",
+       "minimist": "^1.2.5",
+       "moment": "^2.29.1",
+       "mongodb": "^3.6.3",
+       "mysql": "^2.18.1",
+       "node-fetch": "^2.6.1",
+       "ololog": "^1.1.164",
+       "ora": "^5.1.0",
+       "orderbooks": "^1.0.4",
+       "pug": "^3.0.0",
+       "randomcolor": "^0.6.2",
+       "serialize-javascript": "^5.0.1",
+       "simple-statistics": "^7.3.2",
+       "tailwindcss": "^2.0.1",
+       "vtop": "^0.6.1",
+       "ws": "^7.4.0"
+     },
+     "devDependencies": {
+       "babel-eslint": "^10.1.0",
+       "eslint": "^7.14.0",
+       "eslint-config-prettier": "^6.15.0",
+       "eslint-plugin-prettier": "^3.1.4",
+       "eslint-plugin-vue": "^7.1.0",
+       "husky": "^4.3.0",
+       "laravel-mix": "^5.0.9",
+       "lint-staged": "^10.5.2",
+       "postcss-import": "^13.0.0",
+       "prettier": "^2.2.0"
+     }
+   }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
