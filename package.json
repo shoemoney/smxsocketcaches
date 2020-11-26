@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/shoemoney/smxsocketcaches/issues"
   },
-  "homepage": "https://github.com/shoemoney/smxsocketcaches#readme"
+  "homepage": "https://github.com/shoemoney/smxsocketcaches#readme",
+  "dependencies": {
+    "bybit-api": "^1.2.5",
+    "ccxt": "^1.38.30",
+    "dotenv": "^8.2.0",
+    "ioredis": "^4.19.2"
+  }
 }
