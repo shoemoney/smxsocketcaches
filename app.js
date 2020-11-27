@@ -1,5 +1,4 @@
 require('dotenv').config({encoding: ''})
-global.MODE = 'www'
 //require('./src/lib/constants.js')
 // require('./src/lib/utils.js')
 // const market = require('./src/lib/market.js')
@@ -10,14 +9,24 @@ global.MODE = 'www'
 //
 // const db = require('./src/lib/db.js')
 
+const bbwsinverse = require('./lib/bbwsinverse.js')
+const bbwslinear = require('./lib/bbwslinear')
+
+
 async function main() {
 
-    await db.init()
-    await market.init(db)
-    await server.init(market)
-    await agent.init(server, market)
+    await bbwsinverse.init()
+    await bbwslinear.init()
+
+    // await market.init(db)
+    // await server.init(market)
+    //
+    // await bidsaskCachePrice.init()
+    // await marketPriceCache.init()
+    //
+    // await agent.init(server, market)
 
 }
 
 
-main()
+main().then(r => console.log( 'OK'))
